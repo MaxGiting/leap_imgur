@@ -1,15 +1,38 @@
-leap-imgur
+leap_imgur
 ==========
 
-Hook up Leap Motion sensor to specific keyboard keys to control browsing Imgur
+Hook up a Leap Motion sensor to fire specific keyboard keys to control browsing Imgur
 
 ## Overview
-This is a proof of concept piece to connect a Leap Motion sensor up to fire specific keyboard keys on particular hand gestures. 
+This is a proof of concept piece to get a Leap Motion sensor to fire specific keyboard keys on particular hand gestures. 
 This could easily be repurposed for simple / similar leap motion gestures to fire other keyboard keys for other programs.
 
 ## Installation
 You must have Node.JS installed. Then run the file leap.js through Node. This can then be left running in the background while you open your browser.
 The dependency Node_Keyboard requires you run Node.JS in 32 not 64! 
+
+## How to use / Gestures
+Currently 5 gestures are recognised. Next, Last, Up Vote, Down Vote and Favourite. In all of the following gifs the right hand screen shows the Leap visualiser and the Node console. Watch the screen on the left to see the actions acted upon. The Leap Motion sensor is the tiny box in the lower left hand corner. 
+
+###Next
+Scroll to the next image by swiping from left to right
+![alt tag](https://raw.githubusercontent.com/MaxGiting/leap_imgur/master/example_gestures/right_swipe.gif)
+
+###Previous
+Scroll to the previous image by swiping from right to left
+![alt tag](https://raw.githubusercontent.com/MaxGiting/leap_imgur/master/example_gestures/left_swipe.gif)
+
+###Up Vote
+Up vote by holding a palm up / pointing all fingers up. Keep holding to remove the vote.
+![alt tag](https://raw.githubusercontent.com/MaxGiting/leap_imgur/master/example_gestures/up_vote.gif)
+
+###Down Vote
+Down vote by holding a palm down / pointing all fingers down. Keep holding to remove the vote.
+![alt tag](https://raw.githubusercontent.com/MaxGiting/leap_imgur/master/example_gestures/down_vote.gif)
+
+###Favourite
+Add the current images to your favourites by doing a circular motion.
+![alt tag](https://raw.githubusercontent.com/MaxGiting/leap_imgur/master/example_gestures/favourite.gif)
 
 ## F.A.Q / Notes
 ###Gestures logged in the console, but keys do not trigger or different keys trigger.
